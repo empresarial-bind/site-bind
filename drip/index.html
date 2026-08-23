@@ -13,6 +13,12 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <meta name="theme-color" content="#0E3D4D" />
   <title>BIND — O café é o começo</title>
+  <link rel="icon" type="image/png" sizes="32x32" href="/favicons/favicon-32x32.png">
+  <link rel="icon" type="image/png" sizes="16x16" href="/favicons/favicon-16x16.png">
+  <link rel="apple-touch-icon" sizes="180x180" href="/favicons/apple-touch-icon.png">
+  <link rel="icon" type="image/png" sizes="192x192" href="/favicons/android-chrome-192x192.png">
+  <link rel="icon" type="image/png" sizes="512x512" href="/favicons/android-chrome-512x512.png">
+  <link rel="shortcut icon" href="/favicons/favicon.ico">
   <meta name="description" content="Você recebeu um Drip Coffee BIND. Veja como preparar, conheça o café e imagine sua marca aqui." />
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -73,6 +79,7 @@
       letter-spacing: .16em;
       text-transform: uppercase;
     }
+    .brand-logo { height: 32px; width: auto; display: block; }
 
     .hero {
       position: relative;
@@ -475,6 +482,7 @@
       letter-spacing:.16em;
       text-transform:uppercase;
     }
+    .footer-logo { height: 34px; width: auto; display: block; }
     .footer-tagline {
       margin-top:7px;
       color:var(--sand);
@@ -513,7 +521,7 @@
     @media (max-width: 560px) {
       .wrap { width:min(calc(100% - 28px),var(--max)); }
       .topbar { padding-top:18px; }
-      .brand-word { font-size:27px; }
+      .brand-logo { height:26px; }
       .hero { padding-bottom:62px; }
       h1 { font-size:41px; }
       .hero-copy { font-size:16.5px; }
@@ -541,7 +549,7 @@
   <header class="topbar">
     <div class="wrap">
       <a class="brand" href="#top" aria-label="BIND">
-        <span class="brand-word">BIND</span>
+        <img src="/drip/assets/logo-bind.png" alt="BIND" class="brand-logo">
       </a>
     </div>
   </header>
@@ -675,7 +683,7 @@
   <footer>
     <div class="wrap footer-row">
       <div>
-        <div class="footer-brand">BIND</div>
+        <img src="/drip/assets/logo-bind.png" alt="BIND" class="footer-logo">
         <div class="footer-tagline">O café é o começo. A conexão é o que permanece.</div>
       </div>
       <div class="footer-meta">
@@ -686,6 +694,10 @@
     </div>
   </footer>
 
-  <a class="floating-wa" href="https://wa.me/5548988757757?text=Ol%C3%A1%21%20Recebi%20um%20caf%C3%A9%20produzido%20pela%20BIND%20e%20fiquei%20curioso%20para%20ver%20como%20a%20minha%20marca%20pode%20ficar." target="_blank" rel="noopener" aria-label="Falar com a BIND pelo WhatsApp"><span>WA</span></a>
+  <a class="floating-wa" href="https://wa.me/5548988757757?text=Ol%C3%A1%21%20Recebi%20um%20caf%C3%A9%20produzido%20pela%20BIND%20e%20fiquei%20curioso%20para%20ver%20como%20a%20minha%20marca%20pode%20ficar." target="_blank" rel="noopener" aria-label="Falar com a BIND pelo WhatsApp">
+    <svg width="30" height="30" viewBox="0 0 32 32" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+      <path d="M16.004 3C9.14 3 3.5 8.64 3.5 15.5c0 2.36.64 4.58 1.86 6.55L3 29l7.13-2.3a12.4 12.4 0 0 0 5.87 1.49h.01c6.86 0 12.5-5.64 12.5-12.5S22.86 3 16.004 3Zm0 22.75h-.01a10.2 10.2 0 0 1-5.23-1.44l-.375-.223-4.23 1.365 1.383-4.126-.245-.39A10.19 10.19 0 0 1 5.75 15.5c0-5.66 4.6-10.25 10.254-10.25 5.65 0 10.246 4.6 10.246 10.25 0 5.66-4.6 10.25-10.246 10.25Zm5.62-7.68c-.31-.155-1.83-.9-2.11-1.005-.284-.104-.49-.155-.696.156-.207.31-.797 1.005-.977 1.212-.18.207-.36.233-.67.078-.31-.156-1.31-.483-2.494-1.54-.923-.822-1.546-1.838-1.727-2.148-.18-.31-.02-.478.136-.633.14-.14.31-.362.465-.543.155-.18.207-.31.31-.517.104-.207.052-.388-.026-.543-.078-.155-.696-1.68-.955-2.3-.252-.605-.507-.523-.696-.533l-.593-.01c-.207 0-.543.078-.827.388-.284.31-1.086 1.06-1.086 2.585s1.112 3 1.267 3.207c.155.207 2.19 3.343 5.305 4.688.741.32 1.319.512 1.77.655.744.237 1.42.203 1.955.123.596-.089 1.83-.748 2.088-1.47.258-.723.258-1.343.18-1.47-.077-.128-.283-.207-.593-.362Z" fill="currentColor"/>
+    </svg>
+  </a>
 </body>
 </html>
